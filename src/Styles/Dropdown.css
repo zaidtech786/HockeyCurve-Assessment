@@ -1,0 +1,35 @@
+.customSelect {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .selectedOption {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .optionsList {
+
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .optionItem {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .optionItem:hover {
+    background-color: #e6e6e6;
+  }
+  

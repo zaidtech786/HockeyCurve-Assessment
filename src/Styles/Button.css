@@ -1,0 +1,75 @@
+.addTextBtn{
+    padding: 0.7rem 1rem 0.7rem 2.5rem;
+    border-radius: 20px;
+    background-color: rgb(47, 152, 143);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+.btnCont{
+    position: relative;
+    cursor: pointer;
+}
+.plusIcon{
+    width: 25px;
+    height: 25px;
+    background-color: #fff; 
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    left: 5px;
+    top: 7px;
+    font-weight: 800;
+}
+.categoryBtn{
+    /* padding: 1rem 2rem; */
+    width: 7rem;
+    height: 3rem;
+    border-radius: 5px  ;
+    background-color:rgb(47, 152, 143);
+    outline: none;
+    border: none;
+    color: #fdfdfd;
+    font-weight: bold;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+ .categoryBtn.active{
+    background-color:#ffff;
+    color: #000;
+}
+.deleteBtn{
+    background-color: rgb(47, 152, 143);
+    padding: 0.5rem 3rem;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.commonBtn{
+    padding: 0.5rem 3rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #14404b;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1030px) {
+     .categoryBtn{
+        width: 5rem;
+        height: 3rem;
+     }
+}
+@media screen and (max-width:638px) {
+     .categoryBtn{
+        width: 4rem;
+        height: 2rem;
+     }
+}
