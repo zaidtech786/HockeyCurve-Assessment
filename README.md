@@ -1,8 +1,20 @@
-# React + Vite
+Installation 
+To install this webapp you need to run "npm install" under the folder containing all this files.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features:
+1.Add Todo: User can Click on Add Todo button to add a task of any priority and user can also add Due date.
+2.Delete Task: User can delete task in real time.
+3.Implementing validation to ensure all the task are unique and user need to fill all the fields like title,description, due date,priority.
+4.Adding dropDown.
+5.Task Completed Functionality : User can also able to mark the task completed.
+6.Searching Functionality : User can search the task based on title.
+7.Responsive : This app is responsive in all the screen size.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I Also Implemented Additional features of :
+1. Priority Sorting
+2. Creating Accordian
+3. Snooze Functionality
+4. Dark Mode
+5. LocalStorage to save tasks
+   
