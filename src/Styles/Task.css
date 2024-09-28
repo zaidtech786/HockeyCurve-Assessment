@@ -8,7 +8,6 @@
 .taskContainer{
     background-color: #E5E4E2;
     width: 35%;
-    /* height: 50%; */
     padding: 1.5% 2%;
 }
 .taskContainer.on{

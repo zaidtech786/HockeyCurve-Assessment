@@ -1,5 +1,6 @@
 .addTextBtn{
-    padding: 0.7rem 1rem 0.7rem 2.5rem;
+    width: 100%;
+    padding: 0.7rem 1rem 0.7rem 3rem;
     border-radius: 20px;
     background-color: rgb(47, 152, 143);
     outline: none;
@@ -24,9 +25,7 @@
     font-weight: 800;
 }
 .categoryBtn{
-    /* padding: 1rem 2rem; */
-    width: 7rem;
-    height: 3rem;
+    padding: 1rem 3rem;
     border-radius: 5px  ;
     background-color:rgb(47, 152, 143);
     outline: none;
@@ -34,7 +33,6 @@
     color: #fdfdfd;
     font-weight: bold;
     cursor: pointer;
-    flex-wrap: wrap;
 }
  .categoryBtn.active{
     background-color:#ffff;
@@ -57,26 +55,26 @@
     outline: none;
     font-weight: bold;
     color: #fff;
-    background-color: #14404b;
+    background-color: rgb(47, 152, 143);
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-@media screen and (max-width:1030px) {
-     .categoryBtn{
-        width: 5rem;
-        height: 3rem;
-     }
-}
 @media screen and (max-width:638px) {
      .categoryBtn{
-        width: 4rem;
-        height: 2rem;
+       padding: 0.5rem 1rem;
+      
      }
 }
 @media screen and (max-width:600px) {
     .categoryBtn{
 
-       width: 3.3rem;
-       height: 2.5rem;
+    padding: 0.5rem 2rem;
+    }
+}
+@media screen and (max-width:400px) {
+    .categoryBtn{
+
+    padding: 0.5rem 1rem;
     }
 }

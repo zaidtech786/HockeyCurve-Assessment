@@ -1,42 +1,53 @@
-.card{
-    padding: 0.5rem 1rem 0.2rem .2rem;
+
+
+.card {
+    padding: 0.8rem 1rem 0.8rem 0.2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1rem;
-    background-color:#E5E4E2;
+    background-color: #E5E4E2;
     cursor: pointer;
-   
+    border-radius: 10px;
     border: 1px solid #fff;
     color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
-.card.on{
+
+.card.on {
     background-color: #000;
     color: #fff;
 }
-.taskName{
+
+.taskName {
     color: #0c0c0c;
-    font-size:18px;
-    font-weight: bold;
+    font-size: 18px;
 }
-.taskName.on{
+
+.taskName.on {
     color: #ffffff;
 }
-.desc{
+
+.desc {
     color: #000000;
     font-weight: 800;
     font-size: 17px;
 }
-.desc.on{
+
+.desc.on {
     color: #fff;
 }
-.data{
+
+.data {
     padding: 0 1.5rem;
     color: #fff;
+    transition: all 0.3s ease-in;
 }
-.dueDate{
+
+.dueDate {
     color: #000000;
 }
-.dueDate.on{
+
+.dueDate.on {
     color: #fff;
 }

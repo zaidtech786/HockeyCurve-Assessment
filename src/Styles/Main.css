@@ -13,13 +13,14 @@
     background-color: #000;  
 }
 .container{
-    width: 50%;
-    height: 70%;
-   
+    width: 100%;
+    height: 100vh;
 }
 .topSection{
     padding: 1rem 1rem 1rem 1rem;
-    background-color:#E5E4E2;
+    background-color:#92b3d2;
+    border-radius: 10px;
+    overflow-x: hidden;
 }
 .topSection.on{
     background-color: #000;
@@ -27,17 +28,43 @@
 }
 
 .btnsCategories{
-    width: 100%;
+    /* width: 100%; */
     margin-top: 1rem;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 2rem;
 }
-.CardContainer{
+.CardContainer {
+    height: auto; 
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    overflow-y: auto; 
 }
+
+
+@media (max-width: 768px) {
+    .CardContainer {
+        height: 100vh; 
+        overflow-y: scroll; 
+    }
+    .card {
+        flex-direction: column;
+    }
+}
+@media (max-width: 1200px) { 
+    .CardContainer {
+        height: 100vh;
+        overflow-y: scroll; 
+    }
+    .card {
+        flex-direction: column;
+    }
+}
+
 .toggle-switch .on{
     background-color: #000;
 }
@@ -61,5 +88,8 @@
     .container{
         width: 100%;
         height: 100%;
+    }
+    .CardContainer{
+        overflow-y: scroll;
     }
 }

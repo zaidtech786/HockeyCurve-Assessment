@@ -17,11 +17,9 @@ const Addtask = () => {
   const { dispatch ,isOn} = useContext(AppContext);
   const [priority, setPriority] = useState("");
   const navigate = useNavigate();
-
   const id = location.state || {};
   const findTask = state?.tasks?.find( (task) => task.id == id.id);
 
-  console.log("Id :",id.id)
   const [inputs, setInputs] = useState({
     id:findTask?.id || "",
     taskName: findTask?.taskName || "",
@@ -36,7 +34,6 @@ const Addtask = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setInputs({
       ...inputs,
       [name]: value,
@@ -46,12 +43,12 @@ const Addtask = () => {
   const isDateValid = (date) => {
     const now = new Date();
     const inputDate = new Date(date);
-    return inputDate >= now; // Ensure date is today or future
+    return inputDate >= now; 
   };
 
   const Addtask = () => {
     console.log(inputs)
-    if (  //Checking if user filled all the inputs or not
+    if (  
       !inputs?.taskName ||
       !inputs?.desc ||
       !inputs?.dateTime ||
@@ -86,6 +83,7 @@ const Addtask = () => {
     handleToastNotification(navigate,"Task Added Successfully","success")
   };
 
+
   // Delete Task
   const deleteTask = () => {
     dispatch({type:"DELETE_TASK",payload:{id:id.id}});
@@ -94,6 +92,8 @@ const Addtask = () => {
     }, 1000);
     handleToastNotification(navigate,"Task Deleted Successfully","success")
   }
+
+
 
 // Edit Task 
   const EditTask = () => {
@@ -104,6 +104,7 @@ const Addtask = () => {
     handleToastNotification(navigate,"Task Updated Successfully","success")
   }
 
+
 //Complete/Done Task Functionality
   const completeTask = () => {
     dispatch({type:"COMPLETE_TASK",payload:{id:id.id}})
@@ -113,6 +114,7 @@ const Addtask = () => {
     handleToastNotification(navigate,"Task Completed Successfully","success")
   }
 
+
   const options = [
     { label: 'Low', color: 'blue' },
     { label: 'Medium', color: 'orange' },
@@ -120,7 +122,6 @@ const Addtask = () => {
   ];
   
   const handlePriority = (option) => {
-    // setPriority(option.label);
     setInputs({...inputs,priority:option.label})
   }
 
